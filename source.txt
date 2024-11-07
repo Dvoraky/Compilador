@@ -1,0 +1,39 @@
+const
+    PI = 3.14;
+    MAX = 100;
+
+type
+    Inteiro = integer;
+    RealArray = array[10] of real;
+
+var
+    x, y: Inteiro;
+    z: real;
+    arr: RealArray;
+
+function Soma(a, b: Inteiro): Inteiro;
+begin
+    Soma := a + b;
+end;
+
+procedure ImprimeValor(valor: real);
+begin
+    write("O valor e: ", valor);
+end;
+
+begin
+    x := 10;
+    y := 20;
+    z := PI * x + y / 2;
+    arr[1] := z;
+
+    if z > 15.5 then
+        ImprimeValor(z)
+    else
+        ImprimeValor(x);
+
+    while x < MAX do
+    begin
+        x := x + 1;
+    end;
+end.
